@@ -1,0 +1,11 @@
+.selected-category-list {
+  margin: 55px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .card-container {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+  }
+}

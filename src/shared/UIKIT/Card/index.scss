@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  width: fit-content;
+  background: linear-gradient(
+    135.77deg,
+    rgba(255, 255, 255, 0.4) -94.16%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(42px);
+  border-radius: 16px;
+  padding: 12px;
+
+  .img-container {
+    img {
+      border-radius: 16px;
+    }
+    .img-small {
+      width: 205px;
+      height: 148px;
+    }
+    .img-medium {
+      width: 315px;
+      height: 185px;
+    }
+    .img-large {
+      width: 369px;
+      height: 217px;
+    }
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+}

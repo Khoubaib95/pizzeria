@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 

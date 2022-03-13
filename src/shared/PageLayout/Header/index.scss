@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+header {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: $transparent;
+  backdrop-filter: blur(7px);
+  nav {
+    height: 57px;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $white;
+    background-color: $transparent;
+    .search-container {
+      margin-right: 58px;
+    }
+    #brand-icon {
+      margin-right: 85px;
+    }
+    #nav {
+      width: 318px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav-link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+    #nav-user {
+      width: 98px;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #user-cart-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-position: center;
+      }
+    }
+  }
+}

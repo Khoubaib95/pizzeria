@@ -1,0 +1,36 @@
+footer {
+  //height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: linear-gradient(
+    135.77deg,
+    rgba(255, 255, 255, 0.4) -94.16%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(42px);
+
+  .section {
+    display: flex;
+    margin: 0 35px;
+    flex-direction: column;
+    .social-link {
+      margin-top: 25px;
+      span {
+        margin-right: 10px;
+      }
+    }
+    .copy-right {
+      margin-top: 25px;
+    }
+    .section-heading {
+      margin-bottom: 25px;
+    }
+    .section-link {
+      margin: 8px 0;
+    }
+    .email-input {
+      width: 247px;
+    }
+  }
+}

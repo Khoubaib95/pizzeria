@@ -1,0 +1,30 @@
+@import "../../../shared/styles/variables";
+
+.search-container {
+  width: 367px;
+  height: 35px;
+  //margin-right: 58px;
+  //border: 1px solid $white;
+  border-radius: 10px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90.27deg,
+    rgba(255, 255, 255, 0.35) 0.23%,
+    rgba(255, 255, 255, 0.133) 100%
+  );
+  input {
+    background-color: $transparent;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: $search-color;
+    border: none;
+    &::placeholder {
+      color: $white;
+    }
+  }
+}

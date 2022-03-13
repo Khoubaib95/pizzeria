@@ -1,0 +1,15 @@
+.ellipse {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #269100 0%, #a2ff00 98.44%);
+  transform: rotate(30deg);
+}
+.ellipse-medium {
+  width: 248.87px;
+  height: 248.87px;
+}
+.ellipse-large {
+  width: 370.78px;
+  height: 370.78px;
+}
