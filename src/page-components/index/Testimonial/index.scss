@@ -1,0 +1,11 @@
+@import "../../../shared/styles/variables";
+
+#testimonial {
+  position: relative;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .testimonial-list-wrapper {
+    display: flex;
+  }
+}

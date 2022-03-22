@@ -6,16 +6,16 @@ function CategoryList() {
   return (
     <div className="selected-category-list">
       {categorieData.map((category) => (
-        <div className="card-container">
-          <HomeCard
-            img={category.img}
-            title={category.title}
-            stars={category.stars}
-            pastPrice={category.pastPrice}
-            newPrice={category.newPrice}
-            time={category.time}
-          />
-        </div>
+        <HomeCard
+          key={category.slug}
+          img={category.img}
+          title={category.title}
+          link={category.slug}
+          stars={category.stars}
+          pastPrice={category.pastPrice}
+          newPrice={category.newPrice}
+          time={category.time}
+        />
       ))}
     </div>
   );

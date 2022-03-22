@@ -25,11 +25,15 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .nav-link {
+      .link {
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 25px;
+      }
+      .active-link {
+        color: $green;
+        font-weight: 700;
       }
     }
     #nav-user {

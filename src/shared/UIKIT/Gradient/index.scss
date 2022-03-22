@@ -1,0 +1,11 @@
+@import "../../../shared/styles/variables";
+
+.gradient {
+  border-radius: 16px;
+  background: linear-gradient(
+    135.77deg,
+    rgba(255, 255, 255, 0.4) -94.16%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(42px);
+}

@@ -1,0 +1,52 @@
+@import "../../../shared/styles/variables";
+
+.testimonial {
+  padding: 0 50px;
+  img {
+    border-radius: 50%;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    width: 95%;
+  }
+  span {
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+.active-testimonial-card {
+  width: 690px;
+  height: 411px;
+  img {
+    width: 152px;
+    height: 152px;
+    margin-top: -76px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  span {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+.testimonial-card {
+  width: 403px;
+  height: 279px;
+  img {
+    width: 78px;
+    height: 78px;
+    margin-top: -39px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

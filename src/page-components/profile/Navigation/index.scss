@@ -1,0 +1,15 @@
+@import "../../../shared/styles/variables";
+
+.profile-nav {
+  padding: 50px;
+  .link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .active-link {
+    color: $green;
+    font-weight: 700;
+  }
+}

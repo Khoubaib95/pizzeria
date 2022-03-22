@@ -2,7 +2,7 @@ export const categorieData = [
   {
     img: "/images/big-mac-burger.png",
     title: "Big Mac Burger",
-    slug: "big-mac-burger",
+    slug: "/big-mac-burger",
     stars: 5,
     pastPrice: 15.99,
     newPrice: 10.0,
@@ -11,7 +11,7 @@ export const categorieData = [
   {
     img: "/images/banana-pancakes.png",
     title: "Banana Pancakes",
-    slug: "banana-pancakes",
+    slug: "/banana-pancakes",
     stars: 4.9,
     pastPrice: 20.99,
     newPrice: 15.5,
@@ -20,7 +20,7 @@ export const categorieData = [
   {
     img: "/images/fresh-farm-pizza.png",
     title: "Fresh Farm Pizza",
-    slug: "fresh-farm-pizza",
+    slug: "/fresh-farm-pizza",
     stars: 4.5,
     pastPrice: 25.99,
     newPrice: 20.0,
@@ -29,7 +29,7 @@ export const categorieData = [
   {
     img: "/images/grilled-sandwich.png",
     title: "Grilled Sandwich",
-    slug: "grilled-sandwich",
+    slug: "/grilled-sandwich",
     stars: 4.3,
     pastPrice: 35.99,
     newPrice: 20.99,
@@ -38,7 +38,7 @@ export const categorieData = [
   {
     img: "/images/taco-mexicana.png",
     title: "Taco Mexicana",
-    slug: "taco-mexicana",
+    slug: "/taco-mexicana",
     stars: 3.5,
     pastPrice: 40.99,
     newPrice: 20.5,
@@ -47,7 +47,7 @@ export const categorieData = [
   {
     img: "/images/avacado-sandwich.png",
     title: "Avacado Sandwich",
-    slug: "avacado-sandwich",
+    slug: "/avacado-sandwich",
     stars: 3,
     pastPrice: 15.99,
     newPrice: 10.0,
@@ -56,7 +56,7 @@ export const categorieData = [
   {
     img: "/images/pasta-italiano.png",
     title: "Pasta Italiano",
-    slug: "pasta-italiano",
+    slug: "/pasta-italiano",
     stars: 2.5,
     pastPrice: 45.99,
     newPrice: 25.99,
@@ -65,7 +65,7 @@ export const categorieData = [
   {
     img: "/images/shrimp-curry.png",
     title: "Shrimp Curry",
-    slug: "shrimp-curry",
+    slug: "/shrimp-curry",
     stars: 2.5,
     pastPrice: 19.99,
     newPrice: 10.99,
@@ -74,7 +74,7 @@ export const categorieData = [
   {
     img: "/images/hot-dogs.png",
     title: "Hot dogs",
-    slug: "hot-dogs",
+    slug: "/hot-dogs",
     stars: 2,
     pastPrice: 23.99,
     newPrice: 13.99,
@@ -83,7 +83,7 @@ export const categorieData = [
   {
     img: "/images/sugary-donuts.png",
     title: "Sugary Donuts",
-    slug: "sugary-donuts",
+    slug: "/sugary-donuts",
     stars: 2,
     pastPrice: 45.99,
     newPrice: 25.9,

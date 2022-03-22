@@ -7,13 +7,14 @@ import "./index.scss";
 function HomeCard({
   img = "",
   title = "",
+  link,
   stars = 0,
   pastPrice = 0,
   newPrice = 0,
   time = 0,
 }: homeCardPropType) {
   return (
-    <Card title={title} img={img}>
+    <Card title={title} link={link} img={img}>
       <div className="price">
         <span className="past">{`$${pastPrice}`}</span>
         <span className="new">{`$${newPrice}`}</span>

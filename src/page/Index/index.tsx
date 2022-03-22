@@ -1,8 +1,12 @@
 import { useState } from "react";
-import Ellipse from "../page-components/index/Ellipse";
-import CategoryList from "../page-components/index/CategoryList";
-import Category from "../shared/UIKIT/Category";
-import "../page-style/index.scss";
+import Ellipse from "../../shared/UIKIT/Ellipse";
+import CategoryList from "../../page-components/index/CategoryList";
+import Restaurent from "../../page-components/index/Restaurent";
+import Category from "../../shared/UIKIT/Category";
+import Testimonial from "../../page-components/index/Testimonial";
+
+import { data } from "../../page-components/index/Restaurent/data";
+import "./index.scss";
 
 function HomePage() {
   const [category, setCategory] = useState("All");
@@ -28,6 +32,8 @@ function HomePage() {
       </div>
       <Category category={category} setCategory={setCategory} />
       <CategoryList />
+      <Restaurent restaurents={data} />
+      <Testimonial />
     </div>
   );
 }

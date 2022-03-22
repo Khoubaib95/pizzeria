@@ -1,0 +1,23 @@
+@import "../../../shared/styles/variables";
+
+.profile-nav {
+  padding: 20px;
+  height: fit-content;
+  min-width: 180px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  .link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    &:nth-child(2) {
+      margin: 30px 0;
+    }
+  }
+  .active-link {
+    color: $green;
+    font-weight: 700;
+  }
+}
