@@ -1,0 +1,37 @@
+@import "../../../shared/styles/variables";
+
+.restaurent-header {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 29px;
+  .primary-img {
+    width: 50%;
+    height: 496px;
+    border-radius: 20px;
+  }
+  .secondary {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 45%);
+    justify-content: space-around;
+    align-content: space-between;
+    div {
+      //width: 50%;
+      height: 240px;
+      border-radius: 20px;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      &:nth-child(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 82px;
+      }
+    }
+  }
+}

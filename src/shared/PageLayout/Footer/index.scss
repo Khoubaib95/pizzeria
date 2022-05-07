@@ -2,14 +2,13 @@ footer {
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   padding: 54px 0;
   .section {
     display: flex;
     margin: 0 35px;
     flex-direction: column;
     .social-link {
-      margin-top: 169px;
+      display: flex;
       span {
         margin-right: 10px;
       }

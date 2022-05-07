@@ -1,12 +1,10 @@
 import { NavLink } from "react-router-dom";
 import {
-  HOME,
-  RESTAURENTS,
   ABOUT_US,
   INSTAGRAM_LINK,
   YOUTUBE_LINK,
   TWITTER_LINK,
-} from "../../../const";
+} from "../../../const/routes";
 
 import Input from "../../UIKIT/Input";
 import Gradient from "../../UIKIT/Gradient";

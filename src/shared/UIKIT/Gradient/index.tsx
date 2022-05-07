@@ -11,7 +11,7 @@ function Gradient({
 }: GradientPropType) {
   return createElement(
     element,
-    { className: `${className} gradient`, style, ...other },
+    { className: `${className ? className : ""} gradient`, style, ...other },
     children
   );
 }

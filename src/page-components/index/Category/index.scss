@@ -1,0 +1,58 @@
+@import "../../../shared/styles/variables";
+.category {
+  h2 {
+    margin-bottom: 40px;
+  }
+  .category-list {
+    display: flex;
+    justify-content: space-between;
+    .category-element {
+      width: 96px;
+      height: 96px;
+      border-radius: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* border-width: 1px;
+      border-style: solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        137.55deg,
+        #ffffff -45.47%,
+        rgba(255, 255, 255, 0) 132.54%
+      );*/
+
+      &:hover {
+        //border: 1px solid $white;
+        /*border-image-source: linear-gradient(
+          137.55deg,
+          #ffffff -45.47%,
+          rgba(255, 255, 255, 0) 132.54%
+        );*/
+
+        background: linear-gradient(
+          135.77deg,
+          rgba(255, 255, 255, 0.4) -94.16%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        /*background: linear-gradient(
+            135.77deg,
+            rgba(255, 255, 255, 0.4) -94.16%,
+            rgba(255, 255, 255, 0) 100%
+          )
+          border-box,
+        linear-gradient(
+            137.55deg,
+            #ffffff -45.47%,
+            rgba(255, 255, 255, 0) 132.54%
+          )
+          padding-box;
+      */
+        border-radius: 13px;
+        // border: 1px solid transparent;
+        backdrop-filter: blur(42px);
+      }
+    }
+  }
+}

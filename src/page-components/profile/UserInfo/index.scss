@@ -1,0 +1,57 @@
+@import "../../../shared/styles/variables";
+
+.profile-info {
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 33px;
+    input {
+      margin-top: 18px;
+      padding: 0 15px;
+      background-color: $transparent !important;
+      border: 1px solid $white;
+      color: inherit !important;
+      width: 544px;
+      height: 50px;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 33px;
+      box-sizing: border-box;
+    }
+    .updated {
+      border: 2px solid $green;
+    }
+  }
+  .form-footer {
+    width: fit-content;
+    margin: 0 auto;
+    button {
+      width: 170px;
+      height: 40px;
+      border-radius: 10px;
+      color: $white;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 33px;
+      margin-right: 27px;
+    }
+    .active {
+      background-color: $green-1;
+    }
+    .disabled {
+      background-color: $transparent;
+      border: 1px solid $white;
+
+      margin-left: auto;
+      cursor: not-allowed;
+    }
+  }
+}

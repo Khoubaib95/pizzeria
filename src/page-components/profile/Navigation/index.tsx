@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { PROFILES, ORDER_HISTORY, MY_ADRESSES } from "../../../const";
+import { PROFILES, ORDER_HISTORY, MY_ADRESSES } from "../../../const/routes";
 import Gradient from "../../../shared/UIKIT/Gradient";
 import "./index.scss";
 

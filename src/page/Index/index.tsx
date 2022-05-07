@@ -1,15 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { productType, homeRestaurentPropType } from "../../@types";
+import {
+  getRecomendedProducts,
+  getNearRestaurents,
+  getTestimonials,
+} from "../../api/index";
 import Ellipse from "../../shared/UIKIT/Ellipse";
-import CategoryList from "../../page-components/index/CategoryList";
+import Recommended from "../../page-components/index/Recommended";
 import Restaurent from "../../page-components/index/Restaurent";
-import Category from "../../shared/UIKIT/Category";
+import Category from "../../page-components/index/Category";
 import Testimonial from "../../page-components/index/Testimonial";
-
 import { data } from "../../page-components/index/Restaurent/data";
 import "./index.scss";
 
 function HomePage() {
-  const [category, setCategory] = useState("All");
+  const [products, setProducts] = useState<productType[] | null>(null);
+  const [nearRestaurents, setNearRestaurents] = useState<
+    homeRestaurentPropType[] | null
+  >(null);
+  const [testimonials, setTestimonials] = useState<any[] | null>(null);
+  useEffect(() => {
+    (async () => {
+      try {
+        if (!products && !nearRestaurents && !testimonials) {
+          const [products, nearRestaurents, testimonials] = await Promise.all([
+            getRecomendedProducts(),
+            getNearRestaurents(),
+            getTestimonials(),
+          ]);
+          setProducts(products.data);
+          setNearRestaurents(nearRestaurents.data);
+          setTestimonials(testimonials.data);
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  }, []);
   return (
     <div className="home-page">
       <Ellipse size="large" style={{ top: -100, right: -100 }} />
@@ -30,10 +57,10 @@ function HomePage() {
           <Ellipse style={{ left: -125, bottom: -75 }} />
         </div>
       </div>
-      <Category category={category} setCategory={setCategory} />
-      <CategoryList />
-      <Restaurent restaurents={data} />
-      <Testimonial />
+      <Category />
+      <Recommended products={products} />
+      <Restaurent restaurents={nearRestaurents} />
+      <Testimonial testimonials={testimonials} />
     </div>
   );
 }

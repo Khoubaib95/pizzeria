@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, max-content);
+  row-gap: 40px;
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, max-content);
+}

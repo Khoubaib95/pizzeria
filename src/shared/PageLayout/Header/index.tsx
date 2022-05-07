@@ -1,5 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { HOME, RESTAURENTS, ABOUT_US, PROFILES } from "../../../const";
+import {
+  HOME,
+  RESTAURENTS,
+  ABOUT_US,
+  PROFILES,
+  CART,
+} from "../../../const/routes";
 import Input from "../../UIKIT/Input";
 import LOGO_ICON from "../../../assets/icons/logo.svg";
 import LOOP_ICON from "../../../assets/icons/loop.svg";
@@ -10,8 +16,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <img id="brand-icon" src={LOGO_ICON} alt="logo" />
-
+        <NavLink id="brand-icon" to={HOME.link}>
+          <img src={LOGO_ICON} alt="logo" />
+        </NavLink>
         <Input
           rooteClassName="search-container"
           icon={LOOP_ICON}
@@ -48,7 +55,9 @@ function Header() {
           </NavLink>
         </div>
         <div id="nav-user">
-          <img id="shop-cart-icon" src={SHOP_ICON} alt="shop-cart" />
+          <NavLink to={CART}>
+            <img id="shop-cart-icon" src={SHOP_ICON} alt="shop-cart" />
+          </NavLink>
           <NavLink to={PROFILES.link}>
             <div
               id="user-cart-icon"

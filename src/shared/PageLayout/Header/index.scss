@@ -42,7 +42,9 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      #shop-cart-icon {
+        width: 20px;
+      }
       #user-cart-icon {
         width: 30px;
         height: 30px;
